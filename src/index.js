@@ -25,9 +25,9 @@ function resetGuestScore() {
 }
 
 
-let minutes = 0;
-let seconds = 5;
-let currentQuarter = 4;
+let minutes = 12;
+let seconds = 0;
+let currentQuarter = 1;
 const totalQuarters = 4;
 let timerInterval;
 
@@ -52,8 +52,8 @@ function startTimer() {
                 timerInterval = null;
                 if (currentQuarter < totalQuarters) {
                     currentQuarter++;
-                    minutes = 0;
-                    seconds = 5;
+                    minutes = 12;
+                    seconds = 0;
                     quarterEl.textContent = `Quarter: ${currentQuarter}`;
                     updateTimerEl();
                     startTimer();
@@ -79,9 +79,9 @@ function stopTimer() {
 function resetTimer() {
     clearInterval(timerInterval);
     timerInterval = null;
-    minutes = 0;
-    seconds = 5;
-    currentQuarter = 4;
+    minutes = 12;
+    seconds = 0;
+    currentQuarter = 1;
     quarterEl.textContent = `Quarter: ${currentQuarter}`;
     updateTimerEl();
 }
