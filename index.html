@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basketball Scoreboard</title>
+        <link rel="stylesheet" href="/src/index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="home">
+                <h3>HOME</h3>
+                <div class="score-box" id="home-score">0</div>
+                <div class="buttons">
+                    <button class="plusone-btn" onclick="updateScore('home', 1)">+1</button>
+                    <button class="plustwo-btn" onclick="updateScore('home', 2)">+2</button>
+                    <button class="plusthree-btn" onclick="updateScore('home', 3)">+3</button>
+                </div>
+                <div class="reset">
+                    <button class="reset-btn" onclick="resetHomeScore()">Reset</button>   
+                </div>
+            </div>
+            <div class="timer-section">
+                <div class="timer" id="timer">00:05</div>
+                <button class="start-btn" id="start-timer-btn" onclick="startTimer()">Start</button>
+                <button class="stop-btn" id="stop-timer-btn" onclick="stopTimer()">Stop</button>
+                <button class="reset-btn" id="reset-timer-btn" onclick="resetTimer()">Reset</button>
+                
+<div class="quarter" id="quarter">Quarter: 4</div>
+    
+            </div>
+            <div class="guest">
+                <h3>GUEST</h3>
+                <div class="score-box" id="guest-score">0</div>
+                <div class="buttons">
+                    <button class="plusone-btn" onclick="updateScore('guest', 1)">+1</button>
+                    <button class="plustwo-btn" onclick="updateScore('guest', 2)">+2</button>
+                    <button class="plusthree-btn" onclick="updateScore('guest', 3)">+3</button>
+                </div>
+                <div class="reset">
+                    <button class="reset-btn" onclick="resetGuestScore()">Reset</button>   
+                </div>
+            </div>
+        </div>
+        <script src="/src/index.js"></script>
+    </body>
+</html>
