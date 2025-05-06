@@ -85,3 +85,10 @@ function resetTimer() {
     quarterEl.textContent = `Quarter: ${currentQuarter}`;
     updateTimerEl();
 }
+
+window.updateScore = updateScore;
+window.resetHomeScore = resetHomeScore;
+window.resetGuestScore = resetGuestScore;
+window.startTimer = startTimer;
+window.stopTimer = stopTimer;
+window.resetTimer = resetTimer;
